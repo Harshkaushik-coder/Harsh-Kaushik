@@ -1,0 +1,56 @@
+#include <iostream> // user define function
+using namespace std;
+int swapping() // swapping wth use function
+int a,b;
+cout<<"enter the two number :";
+cin>>a>>b;
+cout<<"before swapping : a ="<<a<<", b= "<<b<<endl;
+a = a+b;
+b= a-b;
+a=a-b;
+cout<<"after swapping : a = "<<a<<",b= "<<b<<endl;
+return a,b;;
+float divide()
+{
+float a , b; // FLOAT NUMBER DIVIDE WITH HELP OF FUNCTION
+cout<<" ENTER  THE TWO NUMBER :";
+cin>>a>>b;
+return a/b;
+}
+int square() // SQUARE WITH USE FUNCTION
+{
+    int a;
+    cout<<"ENTER THE  NUMBER  :";
+    cin>>a;
+    return a*a;
+}
+int cube()  // CUDE WITH USE FUNCTION
+{
+int a;
+cout<<"enter the number :";
+cin>>a;
+return a*a*a;
+}
+int  areaofrectangle() //AREA OF RECTANGLE
+{
+    int a,b;
+    cout<<"ENTER THE LENGTH AND BREATH :";
+    cin>>a>>b;
+    return a*b;
+}
+double areaofcircle()  //AREA OF CIRCLE
+{
+    double r;
+    cout<<"ENTER THE RADIUS :";
+    cin>>r;
+    return 3.14*r*r; 
+}
+int main()
+{
+swapping();  //FUNCTION
+cout<<divide()<<endl;
+cout<<square()<<endl;
+cout<<cube()<<endl;
+cout<< areaofrectangle()<<endl;
+cout<<areaofcircle()<<endl;
+return 0 ;
