@@ -1,0 +1,30 @@
+//shorting of array
+//sorting is nothing but odering of the element in the array in acending order 
+// selection sort
+// find the minimum element in unsorted array and swap it with element at begining
+// 12, 45,23,51,19,8
+// 8,45,23,51,19,12
+// 8,12,23,51,19,45
+// 8,12,19,51,23,45
+// 8,12,19,23,51,45
+// 8,12,19,23,45,51
+int n;
+cin>>n;
+int arr[n];
+for(int i = 0;i<n;i++){
+    cin>>arr[i];
+
+}
+for(int i=0;i<=n-1;i++){
+    for(int j=i+1;j<n;j++){
+        if(arr[j]<arr[i]){
+            int temp=arr[i];
+            arr[j]=arr[i];
+            arr[i]=temp;
+        }
+    }
+}
+for(int i=0; i<n;i++){
+    cout<<arr[i]<<" ";
+} cout<<endl;
+}
